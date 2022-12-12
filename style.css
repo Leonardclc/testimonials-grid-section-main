@@ -6,11 +6,6 @@
     box-sizing: border-box;
   }
 
-
-  html, body {
-    height: 100%;
-  }
-
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -74,6 +69,20 @@
         padding: 30px;
         border-radius: 10px;
         margin-top: 60px;
+    }
+
+    .q-img {
+        width: 30%;
+        margin-left: 200px;
+        border: initial;
+        border-radius: initial;
+        position: absolute;
+     
+        margin-top: -20px;
+    }
+
+    .purple-text {
+        position: relative;
     }
 
     .box-jonathan {
@@ -141,34 +150,19 @@
         border: 2px solid white;
     }
 
-    .q-img {
-        width: 30%;
-        float: right;
-        border: initial;
-        border-radius: initial;
-        position: absolute;
-        left: 250px;
-        top: 80px;
-        opacity: 70%;
-    }
-
-    .purple-text {
-        position: relative;
-    }
-
     @media only screen and (min-width: 800px) {
-
         body {
             margin: 0;
         }
 
         .wrapper {
             display: grid;
-            grid-template-columns: repeat(4, minmax(auto, 1fr));
-            margin: 0px 300px 0px 300px;
+            grid-template-columns: repeat(4, minmax(300px, 0.5fr));
             place-items: center;
             min-height: 100vh;
             align-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .box-daniel {
@@ -182,30 +176,31 @@
             grid-column: 4 / 4;
         }
 
-        .box-jonathan > img {
-        }
-
-        .box-jeanette {
-        }
-
         .box-patric {
             grid-column: span 2;
+            max-height: 350px;
         }
 
         img {
             width: 50px;
             height: auto;
+        } 
+
+        .box-jeanette {
+            min-height: 350px;
+        }
+        .box-kira {
+            max-height: 745px;
         }
 
         .q-img {
-            width: 7%;
-            float: right;
+            width: 8%;
+            margin-left: 400px;
             border: initial;
             border-radius: initial;
             position: absolute;
-            left: 700px;
-            top: 120px;
-            opacity: 70%;
+         
+            margin-top: -20px;
         }
     }
     
